@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="icon" href="../../../public/img/" />
+    <title>CarolusDev</title>
+    <link href="../../../public/style/style.css" rel="stylesheet">
+</head>
+
+<body>
+<nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo">
+        <a class="title0" href="../../../view/index.html">CarolusDev</a>
+    </div>
+    <ul class="links">
+        <li><a href="../../../view/blog.html">Blog</a></li>
+        <li><a href="../../../view/portfolio.html">Portfolio</a></li>
+        <li><a href="../../../view/index.html">A propos</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+</nav>
+
+<div class="ImHereForSpace"></div>
+
+
+
+<div class="articleContainer">
+    <div class="articleHeader">
+        <h2 class="titleArticle">Premier programme en Java, N°2</h2>
+    </div>
+    <div class="articleMain">
+
+        <h3 class="titreArticleType">Première classe Java :</h3>
+        <p class="textTypeArticle">Le fichier ayant comme extension .java contient une classe qui doit rigoureusement avoir le même nom que votre fichier et commencer par une majuscule. Dans mon cas, je vais créer un fichier appelé PremierProgramme.java contenant une classe nommée PremierProgramme. </p>
+        <img class="imgArticleTypeBlog" src="img/2_premierProgramme/1.png" alt="simple classe Java"/>
+
+        <h3 class="titreArticleType">Méthode main :</h3>
+        <p class="textTypeArticle">Une fois le fichier créé, nous allons devoir créer une méthode main qui sera le point d’entrée de notre programme. Sans cette méthode le programme ne fonctionnera pas.  </p>
+        <img class="imgArticleTypeBlog" src="img/2_premierProgramme/2.png" alt="simple méthode et affichage texte en  console Java"/>
+
+        <h3 class="titreArticleType">Compilation et exécution :</h3>
+        <p class="textTypeArticle">Nous reviendrons prochainement sur la composition de cette méthode. La ligne System.out permet d’afficher le message entre guillemets dans le terminal. Pour se faire il faut dans un premier temps depuis le terminal vous diriger dans le dossier où se trouve votre programme. Une fois cette étape réalisée vous devrez taper la commande : javac NomClasse.java pour compiler votre programme puis : java NomClasse pour l’exécuter. </p>
+        <img class="imgArticleTypeBlog" src="img/2_premierProgramme/3.png" alt="terminale compilation et exécution Java"/>
+
+        <h3 class="titreArticleType">Comprendre le premier programme :</h3>
+        <img class="imgArticleTypeBlog" src="img/2_premierProgramme/4.png" alt="simple méthode et affichage texte en  console Java"/>
+        <p class="textTypeArticle">La ligne N°1 de la capture ci-dessus est la classe nommée PremierProgramme qui va contenir nos méthodes, dont main. Ces méthodes doivent êtres entre l’accolade de la ligne N°2 et celle de la ligne N°7 qui délimitent la portée de notre classe. Le premier mot clé de la première ligne indique que l’accès à cette classe est possible depuis n’importe quelle autre classe car celle-ci est « public » et non pas « private », « restricted » ou « package ».  </p>
+        <table class="tableTypeArticle">
+            <thead class="trTypeArticle">
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Mots clés</p></td>
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Informations associées</p></td>
+            </thead>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">String[] args</td>
+                <td class="tdTypeArticle">Est le paramètre de la méthode principale, args est donc un tableau de type String. </td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">public</td>
+                <td class="tdTypeArticle">Modificateur d’accès qui définit qui peut accéder à cette méthode ou non. Public permet à toutes les autres classes d’accéder à celle-ci.  </td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">static</td>
+                <td class="tdTypeArticle">Mot clé qui signifie que la méthode ou la variable n’est pas liée à une instance mais à une classe. La méthode est donc accessible sans créer l’instance d’une classe. </td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">void</td>
+                <td class="tdTypeArticle">Utilisé pour définir le type de retour de la méthode, void indique que la méthode ne renverra aucune valeur. </td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">main</td>
+                <td class="tdTypeArticle">Nom de la méthode recherché par la JVM comme point de départ du programme. </td>
+            </tr>
+        </table>
+
+        <h3 class="titreArticleType">Les commentaires :</h3>
+        <p class="textTypeArticle">Les commentaires sont une ou plusieurs lignes de texte qui ne seront ni compilées ni interprétées servant à donner des informations sur ce que vous avez codé. </p>
+        <p class="textTypeArticle">Il existe le commentaire sur une ligne :</p>
+        <img class="imgArticleTypeBlog" src="img/2_premierProgramme/5.png" alt="commentaire sur une ligne java"/>
+        <p class="textTypeArticle">Ainsi que le commentaire sur plusieurs lignes :</p>
+        <img class="imgArticleTypeBlog" src="img/2_premierProgramme/6.png" alt="commentaire sur plusieurs lignes Java"/>
+
+        <h3 class="titreArticleType">Afficher du texte en console :</h3>
+        <p class="textTypeArticle">Analysons cette ligne de notre premier programme :</p>
+        <img class="imgArticleTypeBlog" src="img/2_premierProgramme/7.png" alt="ligne affichage texte console java"/>
+        <table class="tableTypeArticle">
+            <thead class="trTypeArticle">
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Mots clés</p></td>
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Informations associées</p></td>
+            </thead>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">System</td>
+                <td class="tdTypeArticle">System est une classe native liée au système. </td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">Out</td>
+                <td class="tdTypeArticle">Attribut, c’est donc une variable qui appartient à une classe. </td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">Print</td>
+                <td class="tdTypeArticle">Fonction permettant d’afficher en sortie un contenu entre guillemets. Possibilité d’écrire println au lieu de print pour afficher le texte sur une nouvelle ligne. </td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">"Hello World"</td>
+                <td class="tdTypeArticle">Message à afficher. </td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">;</td>
+                <td class="tdTypeArticle">En Java chaque instruction se termine par un point-virgule. </td>
+            </tr>
+        </table>
+
+        <h3 class="titreArticleType">Les caractères spéciaux :</h3>
+        <table class="tableTypeArticle">
+            <thead class="trTypeArticle">
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Caractères spéciaux</p></td>
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Informations associées</p></td>
+            </thead>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">\n</td>
+                <td class="tdTypeArticle">Nouvelle ligne</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">\t</td>
+                <td class="tdTypeArticle">Tabulation </td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">\r</td>
+                <td class="tdTypeArticle">Retour chariot</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">\b</td>
+                <td class="tdTypeArticle">Retour arrière</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">\f</td>
+                <td class="tdTypeArticle">Nouvelle page</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Liens</h4>
+                <ul>
+                    <li><a href="../../../view/blog.html">Blog</a></li>
+                    <li><a href="../../../view/portfolio.html">Portfolio</a></li>
+                    <li><a href="../../../view/index.html">A propos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="#">Copyright X 2021. All rights reserved</a></li>
+                    <li><a href="#">Support technique :</a></li>
+                    <li><a href="#">carolusdev.charlemagne@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>La société</h4>
+                <ul>
+                    <li><a href="#">CarolusDev, développement web</a></li>
+                    <li><a href="#">Avenue Pasteur, 13330 Pélissanne</a></li>
+                    <li><a href="#">Tel : 07 68 64 13 11</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mes réseaux</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/clementpascal.charlemagne/"><img src="../../../public/img/facebook_108044.png" alt="facebook icone"/></a>
+                    <a href="https://www.instagram.com/pascalclementcharlemagne/?hl=fr"><img src="../../../public/img/instagram_108043.png" alt="instagram icone"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

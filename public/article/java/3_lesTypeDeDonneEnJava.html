@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="icon" href="../../../public/img/" />
+    <title>CarolusDev</title>
+    <link href="../../../public/style/style.css" rel="stylesheet">
+</head>
+
+<body>
+<nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo">
+        <a class="title0" href="../../../view/index.html">CarolusDev</a>
+    </div>
+    <ul class="links">
+        <li><a href="../../../view/blog.html">Blog</a></li>
+        <li><a href="../../../view/portfolio.html">Portfolio</a></li>
+        <li><a href="../../../view/index.html">A propos</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+</nav>
+
+<div class="ImHereForSpace"></div>
+
+
+
+<div class="articleContainer">
+    <div class="articleHeader">
+        <h2 class="titleArticle">Les types de données en Java, N°3 :</h2>
+    </div>
+    <div class="articleMain">
+
+        <h3 class="titreArticleType">Le tableau des types en Java :</h3>
+        <table class="tableTypeArticle">
+            <thead class="trTypeArticle">
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Type</p></td>
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Taille</p></td>
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Primitive ou référence</p></td>
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Valeur</p></td>
+            </thead>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">boolean</td>
+                <td class="tdTypeArticle">1 bit</td>
+                <td class="tdTypeArticle">primitive</td>
+                <td class="tdTypeArticle">true ou false</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">byte</td>
+                <td class="tdTypeArticle">1byte</td>
+                <td class="tdTypeArticle">primitive</td>
+                <td class="tdTypeArticle">-128 à 127</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">short</td>
+                <td class="tdTypeArticle">2 byt</td>
+                <td class="tdTypeArticle">primitive</td>
+                <td class="tdTypeArticle">-32 768 à 32 767</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">int</td>
+                <td class="tdTypeArticle">4 byt</td>
+                <td class="tdTypeArticle">primitive</td>
+                <td class="tdTypeArticle">-2 milliards à 2 milliards</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">long</td>
+                <td class="tdTypeArticle">8 byt</td>
+                <td class="tdTypeArticle">primitive</td>
+                <td class="tdTypeArticle">-9 quintillions à 9 quintillions</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">float</td>
+                <td class="tdTypeArticle">4 byt</td>
+                <td class="tdTypeArticle">primitive</td>
+                <td class="tdTypeArticle">6 à 7 chiffres après la virgule</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">double</td>
+                <td class="tdTypeArticle">8 byt</td>
+                <td class="tdTypeArticle">primitive</td>
+                <td class="tdTypeArticle">15 chiffres après la virgule</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">char</td>
+                <td class="tdTypeArticle">2 byt</td>
+                <td class="tdTypeArticle">primitive</td>
+                <td class="tdTypeArticle">lettres, ASCII...</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">String</td>
+                <td class="tdTypeArticle">Vari</td>
+                <td class="tdTypeArticle">primitive</td>
+                <td class="tdTypeArticle">Frase, mots</td>
+            </tr>
+        </table>
+
+        <h3 class="titreArticleType">Bases numériques :</h3>
+        <table class="tableTypeArticle">
+            <thead class="trTypeArticle">
+            <td class="tdTypeArticle"><p class="tdTypeArticle1">Bases numériques</p></td>
+            </thead>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">Décimale</td>
+                <td class="tdTypeArticle">Base 10, de 0 à 9</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">Binaire</td>
+                <td class="tdTypeArticle">Base 2, de 0 à 1</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">Octale</td>
+                <td class="tdTypeArticle">Base 16, de 0 à F</td>
+            </tr>
+            <tr class="trTypeArticle">
+                <td class="tdTypeArticle">Hexadécimale</td>
+                <td class="tdTypeArticle">Base 16, de 0 à F</td>
+            </tr>
+        </table>
+
+        <h3 class="titreArticleType">Nombres entiers :</h3>
+        <p class="textTypeArticle">En java il existe deux méthodes pour écrire des nombres. La première consiste à coller chaque chiffre au chiffre suivant comme par exemple 100000000. Mais cette écriture ne facilite pas la lecture pour les nombres trop grands. C’est pour cela qu’il est possible d’utiliser le séparateur « _ » pour faciliter la lecture, 100_000_000. </p>
+
+        <h3 class="titreArticleType"> Manipuler les bases :</h3>
+        <ul>
+            <li class="listeTypeBlog">Manipuler des nombres binaires : rajouter 0b devant, comme ici : 0b100011110. </li>
+            <li class="listeTypeBlog">Manipuler un nombre de base octale : rajouter 0 devant le nombre. </li>
+            <li class="listeTypeBlog">Manipuler des nombres de base hexadécimale : rajouter 0x devant le nombre et écrire les lettres en majuscule. </li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Liens</h4>
+                <ul>
+                    <li><a href="../../../view/blog.html">Blog</a></li>
+                    <li><a href="../../../view/portfolio.html">Portfolio</a></li>
+                    <li><a href="../../../view/index.html">A propos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="#">Copyright X 2021. All rights reserved</a></li>
+                    <li><a href="#">Support technique :</a></li>
+                    <li><a href="#">carolusdev.charlemagne@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>La société</h4>
+                <ul>
+                    <li><a href="#">CarolusDev, développement web</a></li>
+                    <li><a href="#">Avenue Pasteur, 13330 Pélissanne</a></li>
+                    <li><a href="#">Tel : 07 68 64 13 11</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mes réseaux</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/clementpascal.charlemagne/"><img src="../../../public/img/facebook_108044.png" alt="facebook icone"/></a>
+                    <a href="https://www.instagram.com/pascalclementcharlemagne/?hl=fr"><img src="../../../public/img/instagram_108043.png" alt="instagram icone"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
